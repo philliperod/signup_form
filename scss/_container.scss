@@ -10,9 +10,12 @@
 
   &__item {
     flex: 1;
-    width: 70%;
-    padding: 15px;
+    padding: 0 15px;
   }
+}
+
+.left > p {
+  opacity: 0.8;
 }
 
 .content__container {
@@ -21,7 +24,7 @@
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 6px rgba(0, 0, 0, 0.15);
 }
 
 .content__item {

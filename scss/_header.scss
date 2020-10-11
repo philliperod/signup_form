@@ -1,3 +1,18 @@
 header {
   color: #fff;
+
+  & > h1 {
+    font-size: 45px;
+    font-weight: weight(black);
+    line-height: 1.15;
+  }
+
+  & > p {
+    font-weight: weight(regular);
+  }
 }
+
+// h1 {
+//   font-size: 40px;
+//   font-weight: 600;
+// }
