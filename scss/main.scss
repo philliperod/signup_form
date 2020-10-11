@@ -1,4 +1,7 @@
 @import './variables';
+@import './header';
+@import './promo';
+@import './form';
 
 * {
   box-sizing: border-box;
@@ -7,4 +10,5 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: $red;
+  background-image: url(./images/bg-intro-desktop.png);
 }

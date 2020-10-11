@@ -1,3 +1,21 @@
+header {
+  color: #fff;
+}
+
+.promo {
+  background-color: #6055a5;
+  color: #fff;
+}
+
+button {
+  background-color: #38cc8c;
+  color: #fff;
+}
+
+.disclaimer {
+  color: #b9b6d3;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,5 +24,6 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ff7a7a;
+  background-image: url(./images/bg-intro-desktop.png);
 }
 /*# sourceMappingURL=main.css.map */
