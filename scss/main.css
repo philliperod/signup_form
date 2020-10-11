@@ -4,11 +4,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
   padding: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -23,38 +21,18 @@
       -ms-flex: 1;
           flex: 1;
   padding: 0 15px;
+  width: 49%;
 }
 
 .left > p {
   opacity: 0.8;
 }
 
-.content__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 6px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 6px rgba(0, 0, 0, 0.15);
+@media only screen and (max-width: 900px) {
+  .container__item {
+    width: 100%;
+  }
 }
-
-.content__item {
-  margin: 5px;
-  padding: 15px;
-}
-
-.submit {
-  border: #38cc8c;
-  border-radius: 5px;
-  border-bottom: 5px solid #41ba85;
-}
-
 header {
   color: #fff;
 }
@@ -81,6 +59,10 @@ header > p {
   opacity: 0.8;
 }
 
+strong {
+  color: #fff;
+}
+
 .disclaimer {
   font-size: 10px;
 }
@@ -90,13 +72,47 @@ a {
   text-decoration: none;
 }
 
+.content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.content__item {
+  margin: 5px;
+  padding: 15px 30px;
+}
+
+.fill__box {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
 button {
   background-color: #38cc8c;
   color: #fff;
+  border: #38cc8c;
+  border-radius: 5px;
+  border-bottom: 5px solid #41ba85;
+  text-align: center;
 }
 
 .disclaimer {
   color: #b9b6d3;
+  text-align: center;
+}
+
+a {
+  font-weight: 700;
 }
 
 * {

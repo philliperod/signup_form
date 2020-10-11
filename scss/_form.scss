@@ -1,8 +1,40 @@
+.content__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.content__item {
+  margin: 5px;
+  padding: 15px 30px;
+}
+
+.fill__box {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 5px;
+
+  &:active {
+    border: 1px solid $blue;
+  }
+}
+
 button {
   background-color: $green;
   color: #fff;
+  border: $green;
+  border-radius: 5px;
+  border-bottom: 5px solid rgb(65, 186, 133);
+  text-align: center;
 }
 
 .disclaimer {
   color: $gray-blue;
+  text-align: center;
+}
+
+a {
+  font-weight: weight(bold);
 }
