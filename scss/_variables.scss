@@ -4,16 +4,16 @@ $blue: hsl(248, 32%, 49%);
 $dark-blue: hsl(249, 10%, 26%);
 $gray-blue: hsl(246, 25%, 77%);
 
-$font-weight: {
-    'light': 200,
-    'semi-regular': 300,
-    'regular': 400,
-    'semi-bold': 500,
-    'bold': 600
-};
+$font-weights: (
+  'light': 200,
+  'semi-regular': 300,
+  'regular': 400,
+  'semi-bold': 500,
+  'bold': 600
+);
 
 @function weight($weight-name) {
-    @return map-get($font-weight, $weight-name);
+  @return map-get($font-weights, $weight-name);
 }
 
 // - Mobile: 375px
