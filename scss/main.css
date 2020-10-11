@@ -36,10 +36,20 @@
           flex-direction: column;
   background-color: #fff;
   padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .content__item {
   margin: 5px;
+  padding: 15px;
+}
+
+.submit {
+  border: #38cc8c;
+  border-radius: 5px;
+  border-bottom: 5px solid #41ba85;
 }
 
 header {
@@ -49,6 +59,21 @@ header {
 .promo {
   background-color: #6055a5;
   color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #6055a5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.disclaimer {
+  font-size: 10px;
+}
+
+a {
+  color: #ff7a7a;
+  text-decoration: none;
 }
 
 button {
