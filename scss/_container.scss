@@ -13,17 +13,25 @@
   &__item {
     flex: 1;
     padding: 0 15px;
-    width: 49%;
+    width: 50%;
   }
 }
 
-.left > p {
-  opacity: 0.8;
+.left {
+  min-width: 375px;
+
+  & > p {
+    opacity: 0.8;
+  }
 }
 
-@media only screen and (max-width: 900px) {
+.right {
+  min-width: 375px;
+}
+
+@media (max-width: 890px) {
   .container__item {
     flex: 0;
-    width: 100%;
+    width: 65%;
   }
 }
