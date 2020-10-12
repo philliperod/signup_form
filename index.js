@@ -13,9 +13,16 @@ form.addEventListener('submit', (enter) => {
   const password = form['password'].value;
 
   if (first === '') {
-    const error = (form['first__name'].parentNode.querySelector('em').innerText = 'First Name cannot be empty');
-    const errorIcon = (form['first__name'].parentNode.querySelector('img').style.display = 'block');
-    const errorBorder = (form['first__name'].parentNode.querySelector('input').style.borderColor = 'hsl(0, 100%, 74%)');
+    addError('first__name', 'First Name cannot be empty');
+  }
+  if (last === '') {
+    addError('last__name', 'Last Name cannot be empty');
+  }
+  if (email === '') {
+    addError('email', 'Email address cannot be empty');
+  }
+  if (password === '') {
+    addError('password', 'Password cannot be empty');
   }
 });
 
@@ -23,4 +30,9 @@ function addError(field, message) {
   const error = (form[field].parentNode.querySelector('em').innerText = message);
   const errorIcon = (form[field].parentNode.querySelector('img').style.display = 'block');
   const errorBorder = (form[field].parentNode.querySelector('input').style.borderColor = 'hsl(0, 100%, 74%)');
+}
+
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
 }
