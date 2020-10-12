@@ -100,12 +100,23 @@ a {
 }
 
 .content__item {
-  margin: 10px;
+  margin: 14px;
   padding: 15px 30px;
   font-family: "Poppins", sans-serif;
 }
 
+.form__control {
+  position: relative;
+}
+.form__control > img {
+  position: absolute;
+  right: 22px;
+  top: 28px;
+  display: none;
+}
+
 input {
+  width: 95%;
   border: 1px solid #d0cde5;
   border-radius: 5px;
 }
@@ -113,6 +124,17 @@ input:focus {
   background-color: #f7f7f7;
   border: 1px solid #6055a5;
   outline: none;
+}
+
+small {
+  position: absolute;
+  right: 10px;
+  top: 66px;
+  color: #ff7a7a;
+  font-size: 10px;
+  text-align: right;
+  margin-top: 0;
+  display: none;
 }
 
 button {
