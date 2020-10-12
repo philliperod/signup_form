@@ -18,7 +18,7 @@
 }
 
 .left {
-  min-width: 375px;
+  min-width: 385px;
 
   & > p {
     opacity: 0.8;
@@ -26,12 +26,17 @@
 }
 
 .right {
-  min-width: 375px;
+  min-width: 385px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 910px) {
   .container__item {
     flex: 0;
     width: 65%;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
   }
 }

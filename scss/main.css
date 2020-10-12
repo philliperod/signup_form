@@ -26,22 +26,27 @@
 }
 
 .left {
-  min-width: 375px;
+  min-width: 385px;
 }
 .left > p {
   opacity: 0.8;
 }
 
 .right {
-  min-width: 375px;
+  min-width: 385px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 910px) {
   .container__item {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
     width: 65%;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
   }
 }
 header {
@@ -141,6 +146,7 @@ button {
   background-color: #38cc8c;
   color: #fff;
   font-weight: 600;
+  letter-spacing: 1px;
   border: #38cc8c;
   border-radius: 5px;
   border-bottom: 5px solid #41ba85;
