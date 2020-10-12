@@ -9,7 +9,7 @@
 }
 
 .content__item {
-  margin: 5px;
+  margin: 10px;
   padding: 15px 30px;
   font-family: 'Poppins', sans-serif;
 }
@@ -28,12 +28,13 @@ input {
 button {
   background-color: $green;
   color: #fff;
+  font-weight: weight(semi-bold);
   border: $green;
   border-radius: 5px;
   border-bottom: 5px solid rgb(65, 186, 133);
   box-shadow: 0 2px $green-dark;
   text-align: center;
-  // transition: transform 0.4s ease;
+  cursor: pointer;
 
   &:focus {
     outline: none;

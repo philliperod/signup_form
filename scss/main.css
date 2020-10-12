@@ -52,7 +52,7 @@ header > p {
   background-color: #6055a5;
   color: #fff;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 5px 25px;
   text-align: center;
   border: 1px solid #6055a5;
   border-radius: 5px;
@@ -93,7 +93,7 @@ a {
 }
 
 .content__item {
-  margin: 5px;
+  margin: 10px;
   padding: 15px 30px;
   font-family: "Poppins", sans-serif;
 }
@@ -111,12 +111,14 @@ input:focus {
 button {
   background-color: #38cc8c;
   color: #fff;
+  font-weight: 600;
   border: #38cc8c;
   border-radius: 5px;
   border-bottom: 5px solid #41ba85;
   -webkit-box-shadow: 0 2px #41ba86;
           box-shadow: 0 2px #41ba86;
   text-align: center;
+  cursor: pointer;
 }
 button:focus {
   outline: none;
