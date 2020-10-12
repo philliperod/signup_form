@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow: hidden;
 
   &__item {
     flex: 1;
@@ -22,6 +23,7 @@
 
 @media only screen and (max-width: 900px) {
   .container__item {
+    flex: 0;
     width: 100%;
   }
 }

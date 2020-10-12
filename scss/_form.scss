@@ -5,19 +5,23 @@
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 .content__item {
   margin: 5px;
   padding: 15px 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.fill__box {
-  border: 1px solid rgb(224, 224, 224);
+input {
+  border: 1px solid $blue-light;
   border-radius: 5px;
 
-  &:active {
+  &:focus {
+    background-color: $gray-light;
     border: 1px solid $blue;
+    outline: none;
   }
 }
 
@@ -27,7 +31,18 @@ button {
   border: $green;
   border-radius: 5px;
   border-bottom: 5px solid rgb(65, 186, 133);
+  box-shadow: 0 2px $green-dark;
   text-align: center;
+  // transition: transform 0.4s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: 0 0 $green-dark;
+    transform: translateY(2px);
+  }
 }
 
 .disclaimer {
